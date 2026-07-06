@@ -2,6 +2,11 @@ body {
   background-color: #00FFFF;
 }
 
+.container{
+  margin: 120px auto;
+  max-width: 600px;
+}
+
 h1 {
   font-weight: 800;
   font-size: 36px;
