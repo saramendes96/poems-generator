@@ -1,3 +1,10 @@
 body {
-  background-color: #00FFFF
+  background-color: #00FFFF;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 36px;
+  line-height:1.5;
+  color: #F0FFFF;
 }
