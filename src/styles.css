@@ -26,3 +26,12 @@ form {
   background-color: #add8e6;
   border-radius: 10 px;
 }
+
+.instructions {
+  padding: 16px;
+  border: 1px solid rgba (39, 33, 66, 0.5);
+  width: 80%;
+  font-size: 16px;
+  border-radius: 50px;
+  line-height: 20px;
+}
