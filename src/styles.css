@@ -17,4 +17,8 @@ h1 {
 header {
   margin-bottom:30px;
 }
-  
+
+form {
+  padding: 30px;
+  background-color: white;
+}
