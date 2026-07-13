@@ -40,7 +40,7 @@ form {
 
   .submit-button {
     margin-left: 10px;
-    background:#c9356c;
+    background:#885df1;
     color: white;
     border: none;
     width: 150px;
@@ -54,4 +54,11 @@ font-size: 14px;
 background-color: #fff;
 padding: 20px;
 line-height: 24 px;
+border-left: 3px solid #885df1;
+}
+
+footer {
+text-align: center;
+font-size: 13px;
+margin-top: 30px;
 }
