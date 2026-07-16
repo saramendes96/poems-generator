@@ -1,7 +1,7 @@
 function generatePoem(event) {
   event.preventDefault();
 
-  alert("Generating poem");
+let poemElement = document.querySelector ("#poem");
 }
 
 let poemFormElement = document.querySelector ("#poem-generator-form");
