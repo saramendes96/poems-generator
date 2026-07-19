@@ -1,6 +1,6 @@
 function displayPoem(response) {
   new Typewriter("#poem", {
-  strings: "La tombe dit à la rose",
+  strings: response.data.answer,
   autoStart: true,
   delay: 1,
   cursor: "",
