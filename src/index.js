@@ -15,6 +15,8 @@ let prompt = "";
 let context = "";
 let apiURL = "https://api.shecodes.io/ai/v1/generate?prompt={prompt}&context={context}&key={apiKey}";
 
+console.log("generating poem");
+
 axios.get(apiURL).then(displayPoem);
 
 let poemFormElement = document.querySelector ("#poem-generator-form");
