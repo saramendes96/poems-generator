@@ -28,3 +28,6 @@ function generatePoem(event) {
 
   axios.get(apiURL).then(displayPoem);
 }
+
+let formElement = document.querySelector("#poem-generator-form");
+formElement.addEventListener("submit", generatePoem);
