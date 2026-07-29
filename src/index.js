@@ -16,7 +16,7 @@ function generatePoem(event) {
   let apiKey = "ac399aato84e379f39f3cfe3ba24af50";
 
   let context =
-    "You are a romantic poem expert and love to write short poems. Your mission is to generate a 4 line poem in basic HTML and separate each line with a <br/>. Make sure to follow the user instructions. Do not include a title to the poem. Sign the poem with <strong>SheCodesAI</strong> at the end of the poem.";
+    "You are a romantic poem expert and love to write short poems. Your mission is to generate a 4 line poem in basic HTML and separate each line with a <br/>. Do NOT wrap the response in ```html or ``` markdown code fences. Make sure to follow the user instructions. Do not include a title to the poem. Sign the poem with <strong>SheCodesAI</strong> at the end of the poem.";
 
   let prompt = `User instructions: Generate a French poem about "${instructionsInput.value}"`;
 
