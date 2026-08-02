@@ -26,6 +26,7 @@ header {
 .form-container{
    background-color: #add8e6;
    margin-bottom: 30px;
+   border-radius: 10 px;
 }
 
 form {
