@@ -64,6 +64,7 @@ form {
 .poem {
 font-size: 20px;
 background-color: #fff;
+display: block;
 padding: 20px;
 line-height: 1.8;
 border-left: 3px solid #885df1;
