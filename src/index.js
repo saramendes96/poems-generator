@@ -23,8 +23,8 @@ function generatePoem(event) {
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   let poemElement = document.querySelector("#poem");
-  poemElement.classList.remove = ("hidden");
-  poemElement.innerHTML = `Generating a French poem about ${instructionsInput.value`;
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `Generating a French poem about ${instructionsInput.value}`;
 
   axios.get(apiURL).then(displayPoem);
 }
