@@ -18,7 +18,7 @@ function generatePoem(event) {
   let context =
   "You are a travel expert who specializes in creating personalized travel recommendations. Your mission is to suggest a travel destination based on the user's instructions. Provide a short and engaging recommendation in basic HTML. Use <br/> to separate different pieces of information. Do NOT wrap the response in ```html or ``` markdown code fences. Do not include a title. Make sure to follow the user instructions.";
 
-  let prompt = `User instructions: Generate a French poem about "${instructionsInput.value}"`;
+  let prompt = `User instructions: Suggest a travel destination based on "${instructionsInput.value}"`;
 
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
