@@ -1,7 +1,7 @@
-function displayPoem(response) {
-  console.log("poem generated");
+function displayDestination(response) {
+  console.log("destination generated");
 
-  new Typewriter("#poem", {
+  new Typewriter("#destination", {
     strings: response.data.answer,
     autoStart: true,
     delay: 1,
@@ -9,7 +9,7 @@ function displayPoem(response) {
   });
 }
 
-function generatePoem(event) {
+function generateDestination(event) {
   event.preventDefault();
 
   let instructionsInput = document.querySelector("#user-instructions");
@@ -17,15 +17,17 @@ function generatePoem(event) {
 
   let context =
   "You are a travel expert who specializes in creating personalized travel recommendations. Your mission is to suggest a travel destination based on the user's instructions. Provide a short and engaging recommendation in basic HTML. Use <br/> to separate different pieces of information. Do NOT wrap the response in ```html or ``` markdown code fences. Do not include a title. Make sure to follow the user instructions.";
-
+  
+  let prompt = `User instructions: Suggest a travel destination based on "${instructionsInput.value}"`;
+  
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  let poemElement = document.querySelector("#poem");
-  poemElement.classList.remove("hidden");
-  poemElement.innerHTML = `<div class="blink">Finding the perfect destination for ${instructionsInput.value}</div>`;
+  let destinationElement = document.querySelector("#poem");
+  destinationElement.classList.remove("hidden");
+  destinationElement.innerHTML = `<div class="blink">Finding the perfect destination for ${instructionsInput.value}</div>`;
 
-  axios.get(apiURL).then(displayPoem);
+  axios.get(apiURL).then(displayDestination);
 }
 
 let formElement = document.querySelector("#travel-generator-form");
-formElement.addEventListener("submit", generatePoem);
+formElement.addEventListener("submit", generateDestination);
