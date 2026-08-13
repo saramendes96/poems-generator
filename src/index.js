@@ -22,7 +22,7 @@ function generateDestination(event) {
   
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  let destinationElement = document.querySelector("#poem");
+  let destinationElement = document.querySelector("#destination");
   destinationElement.classList.remove("hidden");
   destinationElement.innerHTML = `<div class="blink">Finding the perfect destination for ${instructionsInput.value}</div>`;
 
