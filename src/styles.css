@@ -23,20 +23,16 @@ header {
   margin-bottom:30px;
 }
 
-.form-container{
-   background-color: #add8e6;
-   margin-bottom: 30px;
-   border-radius: 10px;
-   padding: 30px;
+.form-container {
+  background-color: #fff;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  padding: 30px;
 }
 
 form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 30px;
-  background-color: #add8e6;
-  border-radius: 10px;
-  margin-bottom: 30px;
+  display: flex;
+  gap: 10px;
 }
 
 .instructions {
